@@ -1,0 +1,28 @@
+<index.html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Love</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .love-line {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<script>
+    // JavaScript to continuously append love lines
+    setInterval(function() {
+        var loveLine = document.createElement('p');
+        loveLine.className = 'love-line';
+        loveLine.textContent = 'Love from swastik ????';
+        document.body.appendChild(loveLine);
+    }, 100); // Adjust the time interval (in milliseconds) as needed
+</script>
+</body>
+</html>
